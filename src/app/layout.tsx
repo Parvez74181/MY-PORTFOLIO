@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           <main className="">{children}</main>
           <Footer />
+          <ContactForm />
         </Providers>
       </body>
     </html>

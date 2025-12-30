@@ -7,7 +7,7 @@ const projects: Project[] = [
     thumbnail: "/projects/linear.jpg",
     content:
       "A complete education management solution featuring a modern public website and a role-based admin dashboard. The platform streamlines academic workflows, finance management, student records, attendance, exams, and performance tracking with a scalable, type-safe architecture.",
-    url: "#",
+    url: "https://academy.linearedu.com",
   },
   {
     heading: "Martege Ecommerce Platform",

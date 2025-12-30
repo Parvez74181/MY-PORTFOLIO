@@ -47,8 +47,9 @@ const Reveal = ({ children, className, type = "bottom", delay = 0.25 }: Props) =
         animate={controls} // Controls the animation state
         transition={{ type: "spring", stiffness: 100, damping: 20, delay: delay }} // Spring animation with stiffness and damping
         aria-hidden
+        className="relative"
       >
-        {children} {/* Render any children passed to the Reveal component */}
+        {children}
       </motion.div>
     </div>
   );
