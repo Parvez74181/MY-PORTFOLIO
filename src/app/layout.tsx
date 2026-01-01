@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-bg">
+    <html lang="en" className="bg-bg scroll-smooth">
       <body className={`${lexend.variable} ${lexend.className} antialiased `}>
         <Providers>
           <Navbar />

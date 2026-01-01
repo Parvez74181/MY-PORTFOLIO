@@ -95,7 +95,7 @@ const TechStackSection = () => {
           <div className=" flex lg:items-center justify-between md:flex-row flex-col gap-5">
             <div>
               <Reveal type="left">
-                <Divider className="w-44 bg-bg h-1.5 lg:h-3 mb-4" />
+                <Divider className="w-28 md:w-44 bg-bg h-1.5 lg:h-3 mb-4" />
               </Reveal>
               <Reveal type="left" delay={0.5}>
                 <h2 className="text-4xl sm:text-5xl lg:text-7xl text-bg uppercase font-semibold">

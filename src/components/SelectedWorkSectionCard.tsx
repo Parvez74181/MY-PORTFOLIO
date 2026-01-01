@@ -9,7 +9,7 @@ import { ArrowUpCircle } from "react-ionicons";
 interface Props extends Project {
   rtl?: boolean;
 }
-const SelectedWorkSectionCard = ({ heading, subHeading, thumbnail, content, url, rtl }: Props) => {
+const SelectedWorkSectionCard = ({ heading, subHeading, thumbnail, content, slug, rtl }: Props) => {
   return (
     <>
       <div className="flex w-auto lg:flex-row flex-col lg:items-center  lg:gap-10 border border-dark ">
@@ -32,7 +32,7 @@ const SelectedWorkSectionCard = ({ heading, subHeading, thumbnail, content, url,
           <h2 className="font-medium text-xl sm:text-3xl my-2.5 md:my-5">{heading}</h2>
           <p className="font-normal text-sm ">{content}</p>
           <Link
-            href={url}
+            href={`/project/${slug}`}
             className="flex group items-center gap-5 hover:underline sm:text-lg font-semibold mt-2.5 md:mt-5"
           >
             Know More

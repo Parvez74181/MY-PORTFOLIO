@@ -5,7 +5,6 @@ import NextImage from "next/image";
 import { LogoFacebook, LogoGithub, LogoInstagram, LogoLinkedin } from "react-ionicons";
 import Reveal from "../animation/Reveal";
 import useContactButtonClicked from "@/store/contactButtonClickedState";
-import TextHoverShift from "../animation/TextHoverShift";
 
 const HeroSection = () => {
   const { setClicked } = useContactButtonClicked();

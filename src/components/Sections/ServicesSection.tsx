@@ -10,12 +10,12 @@ const ServicesSection = () => {
   const setClicked = useContactButtonClicked((state) => state.setClicked);
   return (
     <>
-      <section className="bg-dark py-20 text-bg">
+      <section className="bg-dark py-20 text-bg" id="services">
         <div className="section grid grid-cols-1 md:grid-cols-2">
           <div className="flex items-start justify-between flex-col gap-5">
             <div>
               <Reveal type="left" delay={0.5}>
-                <Divider className="w-44 bg-bg h-1.5 lg:h-3 mb-4" />
+                <Divider className="w-28 md:w-44 bg-bg h-1.5 lg:h-3 mb-4" />
               </Reveal>
               <Reveal type="left" delay={0.25}>
                 <h2 className="text-4xl sm:text-5xl lg:text-7xl  uppercase font-semibold">

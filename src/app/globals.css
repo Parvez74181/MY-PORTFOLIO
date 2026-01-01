@@ -18,10 +18,20 @@
   --font-mono: var(--font-geist-mono);
   --color-dark: var(--foreground);
   --color-bg: var(--background);
+  --color-violet: #483fe9;
 }
 .section {
   @apply container px-5! sm:px-0 mx-auto;
 }
+.project-px {
+  @apply px-5 sm:px-10 md:px-15 lg:px-32 xl:px-52;
+}
+ul li {
+  list-style: disc;
+  margin-left: 14px;
+  padding: 6px 0;
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

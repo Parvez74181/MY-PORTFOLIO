@@ -8,10 +8,10 @@ import Reveal from "../animation/Reveal";
 const SelectedWorkSection = () => {
   return (
     <>
-      <section className="section py-20 ">
+      <section className="section py-20 " id="work">
         <div>
           <Reveal type="left" delay={0.4}>
-            <Divider className="w-44 bg-dark h-1.5 lg:h-3 mb-4" />
+            <Divider className="w-28 md:w-44 bg-dark h-1.5 lg:h-3 mb-4" />
           </Reveal>
 
           <Reveal type="left" delay={0.5}>
@@ -26,7 +26,7 @@ const SelectedWorkSection = () => {
 
         <div className="md:my-20 mt-10 md:space-y-20 space-y-10">
           {projects.map((project, i) => (
-            <SelectedWorkSectionCard key={project.heading} rtl={!((i + 1) % 2)} {...project} />
+            <SelectedWorkSectionCard key={project.id} rtl={!((i + 1) % 2)} {...project} />
           ))}
         </div>
       </section>
