@@ -3,7 +3,6 @@
 import { Divider, Image } from "@heroui/react";
 import NextImage from "next/image";
 import projects from "../../data/projects";
-import Reveal from "./animation/Reveal";
 import Link from "next/link";
 import { ArrowUpOutline } from "react-ionicons";
 
