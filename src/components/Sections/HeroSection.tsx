@@ -74,7 +74,7 @@ const HeroSection = () => {
             alt="hero_bg"
             height={500}
             width={500}
-            className="-scale-x-100 w-75 lg:w-125 h-auto!  md:absolute md:-top-20 md:right-0 z-0"
+            className="-scale-x-100 w-75 md:w-100 lg:w-125 h-auto!  md:absolute md:-top-20 md:right-0 z-0 animate-float"
           />
         </div>
       </section>
