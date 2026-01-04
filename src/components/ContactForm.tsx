@@ -141,7 +141,7 @@ const ContactForm = () => {
                       className="uppercase  bg-dark text-bg w-52 px-5 sm:h-14 sm:w-64 font-xl font-bold"
                     >
                       <span className="uppercase flex items-center justify-center gap-2">
-                        Submit
+                        Send Message
                         <PaperPlaneOutline color={"#f2f5ea"} height="25px" width="25px" />
                       </span>
                     </Button>

@@ -12,7 +12,7 @@ const ProjectPage = ({ slug }: any) => {
 
   return (
     <>
-      <section className="">
+      <section className="project">
         <div className=" bg-violet/5">
           <div className="flex items-center justify-between lg:flex-row flex-col gap-5 section py-10 lg:py-20">
             <div className="space-y-3 lg:w-1/2 lg:order-1 order-2">

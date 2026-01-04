@@ -5,6 +5,7 @@ import NextImage from "next/image";
 import { LogoFacebook, LogoGithub, LogoInstagram, LogoLinkedin } from "react-ionicons";
 import Reveal from "../animation/Reveal";
 import useContactButtonClicked from "@/store/contactButtonClickedState";
+import Link from "next/link";
 
 const HeroSection = () => {
   const { setClicked } = useContactButtonClicked();
@@ -22,10 +23,24 @@ const HeroSection = () => {
 
             <div className="absolute *:*:flex *:*:items-center *:*:justify-center *:*:flex-col *:*:gap-3 *:*:md:gap-5 left-0 md:top-14 ">
               <Reveal type="top" delay={1.25}>
-                <LogoLinkedin color={"#2c363f"} height="24px" width="24px" />
-                <LogoFacebook color={"#2c363f"} height="24px" width="24px" />
-                <LogoGithub color={"#2c363f"} height="24px" width="24px" />
-                <LogoInstagram color={"#2c363f"} height="24px" width="24px" />
+                <Link
+                  href={
+                    "https://www.linkedin.com/in/md-joy-parvez-8100a0203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  }
+                  target="_blank"
+                >
+                  <LogoLinkedin color={"#2c363f"} height="24px" width="24px" />
+                </Link>
+                <Link href={"https://www.facebook.com/share/16g32KB4pJ/"} target="_blank">
+                  <LogoFacebook color={"#2c363f"} height="24px" width="24px" />
+                </Link>
+
+                <Link href={"https://github.com/Parvez74181"} target="_blank">
+                  <LogoGithub color={"#2c363f"} height="24px" width="24px" />
+                </Link>
+                <Link href={"https://www.instagram.com/md__.parvez?igsh=aGVyZjFuc3ZmNWYz"} target="_blank">
+                  <LogoInstagram color={"#2c363f"} height="24px" width="24px" />
+                </Link>
               </Reveal>
             </div>
 

@@ -4,12 +4,12 @@ const techStack = [
     { name: "Astro.js", icon: "astrojs" },
     { name: "Next.js", icon: "nextjs" },
     { name: "Payload.js", icon: "payloadjs" },
-    { name: "Gatsby", icon: "gatsby" },
+    // { name: "Gatsby", icon: "gatsby" },
     { name: "Redux", icon: "redux" },
     { name: "GraphQL", icon: "graphql" },
   ],
   [
-    { name: "Nest.js", icon: "nestjs" },
+    // { name: "Nest.js", icon: "nestjs" },
     { name: "Node.js", icon: "nodejs" },
     { name: "Express.js", icon: "expressjs" },
     { name: "Django", icon: "django" },
@@ -29,7 +29,7 @@ const techStack = [
     { name: "Strapi", icon: "strapi" },
     { name: "BigCommerce", icon: "bigcommerce" },
     { name: "WordPress", icon: "wordpress" },
-    { name: "Prismic", icon: "prismic" },
+    // { name: "Prismic", icon: "prismic" },
   ],
 ];
 export default techStack;

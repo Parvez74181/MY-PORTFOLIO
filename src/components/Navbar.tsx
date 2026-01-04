@@ -13,10 +13,12 @@ import Link from "next/link";
 import navItems from "../../data/navItems";
 import { useState } from "react";
 import useContactButtonClicked from "@/store/contactButtonClickedState";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const setClicked = useContactButtonClicked((state) => state.setClicked);
+
   return (
     <>
       <div className="border-b bg-bg">
@@ -40,7 +42,7 @@ const Navbar = () => {
           </NavbarBrand>
           <NavbarContent className="hidden sm:flex gap-4" justify="center">
             {navItems.map((item) => (
-              <NavbarItem key={item.name} className="list-none! ms-0! py-0!">
+              <NavbarItem key={item.name} className={cn("list-none! ms-0! py-0! nav-item")}>
                 <Link href={item.url}>{item.name}</Link>
               </NavbarItem>
             ))}

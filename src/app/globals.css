@@ -26,12 +26,29 @@
 .project-px {
   @apply px-5 sm:px-10 md:px-15 lg:px-32 xl:px-52;
 }
-ul li {
+.project ul li {
   list-style: disc;
   margin-left: 14px;
   padding: 6px 0;
 }
-
+.nav-item {
+  position: relative;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  border-radius: 2px;
+  transition: all 0.3s;
+  background: var(--foreground);
+}
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 50%;
+}
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
